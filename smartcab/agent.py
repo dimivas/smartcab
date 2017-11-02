@@ -79,7 +79,7 @@ def run(alpha, gamma, epsilon):
     e.set_primary_agent(a, enforce_deadline=True)  # specify agent to track
 
     # Now simulate it
-    sim = Simulator(e, update_delay=0.01, display=False)  # create simulator (uses pygame when display=True, if available)
+    sim = Simulator(e, update_delay=0.5, display=True)  # create simulator (uses pygame when display=True, if available)
 
     sim.run(n_trials=100)  # run for a specified number of trials
 
